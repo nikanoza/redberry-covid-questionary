@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "BPG Arial";
+  src: url(./assets/font/bpg_arial_2009.ttf) format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: BPG Arial;
+}
+
+:root {
+  --background: #eaeaea;
+  --darkText: #232323;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+}
