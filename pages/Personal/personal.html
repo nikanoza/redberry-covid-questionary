@@ -9,6 +9,54 @@
     <title>COVID-QUESTIONARY</title>
   </head>
   <body>
-    <h1>personal information page</h1>
+    <main>
+      <header>
+        <div class="header-top">
+          <img src="../../assets/title.png" alt="company title" />
+          <span>1/4</span>
+        </div>
+        <hr />
+      </header>
+      <section class="content">
+        <form>
+          <label for="name">სახელი*</label>
+          <input type="text" id="name" name="name" placeholder="სახელი" />
+          <div class="error-box">
+            <p class="error" id="name-error"></p>
+          </div>
+          <label for="surname">გვარი*</label>
+          <input type="text" id="surname" name="surname" placeholder="გვარი" />
+          <div class="error-box">
+            <p class="error" id="surname-error"></p>
+          </div>
+          <label for="email">მეილი*</label>
+          <input type="email" id="email" name="email" placeholder="ელ.ფოსტა" />
+          <div class="error-box">
+            <p class="error" id="email-error"></p>
+          </div>
+          <hr />
+          <p class="warning">
+            *-ით მონიშნული ველების შევსება <br />სავალდებულოა
+          </p>
+        </form>
+        <img src="../../assets/persons.png" alt="people" class="info-img" />
+      </section>
+      <button class="next-btn" onclick="onNextPage()">
+        <svg
+          width="18"
+          height="23"
+          viewBox="0 0 18 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1L15 11.3158L1 21.6316"
+            stroke="#232323"
+            stroke-width="2.4"
+          />
+        </svg>
+      </button>
+    </main>
+    <script src="./personal.js"></script>
   </body>
 </html>

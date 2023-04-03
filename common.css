@@ -7,12 +7,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: BPG Arial;
+  font-family: "BPG Arial";
 }
 
 :root {
   --background: #eaeaea;
   --darkText: #232323;
+  --dark: #000000;
+  --warning: #626262;
+  --error: #f15524;
 }
 
 body {
