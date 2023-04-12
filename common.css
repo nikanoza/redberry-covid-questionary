@@ -19,7 +19,42 @@
 }
 
 body {
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background-color: var(--background);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 90px 196px 104px 155px;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+.header-top {
+  width: 100%;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top span {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--darkText);
+}
+
+header hr {
+  border: 1.8px solid var(--darkText);
+  margin-top: 15px;
+}
+
+.content {
+  display: flex;
 }

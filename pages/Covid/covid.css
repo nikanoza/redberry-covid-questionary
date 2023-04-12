@@ -1,0 +1,124 @@
+main {
+  padding: 90px 200px 0 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 42px;
+  min-width: 600px;
+}
+
+form h2 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26.55px;
+  color: var(--darkText);
+  margin-bottom: 8px;
+}
+
+form hr {
+  width: 237px;
+  border: 0.8px solid var(--dark);
+  margin-top: 64px;
+}
+
+.info-img {
+  margin-left: 100px;
+  margin-top: -23px;
+  width: 850px;
+}
+
+.warning {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.31px;
+  margin-top: 20px;
+  color: var(--warning);
+}
+
+.next-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.error-box {
+  width: fit-content;
+  height: 20px;
+  margin-bottom: 27px;
+}
+
+.error {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.31px;
+  color: var(--error);
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+  margin-bottom: 19px;
+}
+
+.test-question {
+  margin-top: 20px;
+  display: none;
+}
+
+.test-question.active {
+  display: block;
+}
+
+.test-box {
+  display: none;
+}
+
+.test-box.active {
+  display: flex;
+}
+
+.buttons {
+  margin: auto;
+  margin-top: -56px;
+  display: flex;
+  gap: 117px;
+}
+
+form input[type="text"] {
+  margin-top: 8px;
+  width: 513px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.73px;
+  color: var(--darkText);
+  outline: none;
+  border: 0.8px solid var(--darkText);
+  background: transparent;
+  padding: 11px 20px 9px 20px;
+  margin-left: 20px;
+  display: none;
+}
+
+form input[type="text"].active {
+  display: block;
+}
+
+.test-amount-title {
+  display: none;
+}
+
+.test-amount-title.active {
+  display: block;
+}
+.covid-date {
+  display: none;
+}
+
+.covid-date.active {
+  display: block;
+}

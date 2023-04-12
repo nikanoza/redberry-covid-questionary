@@ -4,9 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <link rel="stylesheet" href="./covid.css" />
+    <title>COVID-QUESTIONARY</title>
   </head>
   <body>
-    <h1>covid page</h1>
+    <main>
+      <header>
+        <div class="header-top">
+          <img src="../../assets/title.png" alt="company title" />
+          <span>2/4</span>
+        </div>
+        <hr />
+      </header>
+      <section class="content">
+        <form>
+          <h2>გაქვს გადატანილი Covid-19?*</h2>
+          <div class="input-box">
+            <input type="radio" name="covid_status" id="covid_yes" />
+            <label for="covid_yes">კი</label>
+          </div>
+          <div class="input-box">
+            <input type="radio" name="covid_status" id="covid_no" />
+            <label for="covid_no">არა</label>
+          </div>
+          <div class="input-box">
+            <input type="radio" name="covid_status" id="covid_now" />
+            <label for="covid_now">ახლა მაქვს</label>
+          </div>
+          <h2 class="test-question">ანტისხეულების ტესტი გაქვს გაკეთებული?*</h2>
+          <div class="input-box test-box">
+            <input type="radio" name="test_status" id="test_yes" />
+            <label for="test_yes">კი</label>
+          </div>
+          <div class="input-box test-box">
+            <input type="radio" name="test_status" id="test_no" />
+            <label for="test_no">არა</label>
+          </div>
+          <h2 class="test-amount-title">
+            თუ გახსოვს, გთხოვ მიუთითე ტესტის მიახლოებითი რიცხვი და ანტისხეულების
+            რაოდენობა*
+          </h2>
+          <input
+            type="text"
+            name="test_date"
+            id="test_date"
+            placeholder="რიცხვი"
+          />
+          <input
+            type="text"
+            name="amount"
+            id="amount"
+            placeholder="ანტისხეულების რაოდენობა"
+          />
+          <h2 class="covid-date">
+            მიუთითე მიახლოებითი პერიოდი (დღე/თვე/წელი) როდის გქონდა Covid-19*
+          </h2>
+          <input
+            type="text"
+            name="covid-date"
+            id="covid-date"
+            placeholder="ანტისხეულების რაოდენობა"
+          />
+        </form>
+        <img
+          src="../../assets/temperature.png"
+          alt="thermometer"
+          class="info-img"
+        />
+      </section>
+      <div class="buttons">
+        <button class="next-btn" onclick="onPreviousPage()">
+          <svg
+            width="18"
+            height="23"
+            viewBox="0 0 18 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17 1L3 11.3158L17 21.6316"
+              stroke="#232323"
+              stroke-width="2.4"
+            />
+          </svg>
+        </button>
+        <button class="next-btn" onclick="onNextPage()">
+          <svg
+            width="18"
+            height="23"
+            viewBox="0 0 18 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L15 11.3158L1 21.6316"
+              stroke="#232323"
+              stroke-width="2.4"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+    <script src="./covid.js"></script>
   </body>
 </html>
