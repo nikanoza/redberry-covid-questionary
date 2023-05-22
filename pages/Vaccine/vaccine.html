@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../common.css" />
+    <link rel="stylesheet" href="./vaccine.css" />
+    <title>COVID-QUESTIONARY</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="header-top">
+          <img src="../../assets/title.png" alt="company title" />
+          <span>3/4</span>
+        </div>
+        <hr />
+      </header>
+      <section class="content">
+        <form>
+          <h2>უკვე აცრილი ხარ?*</h2>
+          <div class="input-box">
+            <input type="radio" name="vaccine_status" id="vaccine_yes" />
+            <label for="vaccine_status">კი</label>
+          </div>
+          <div class="input-box">
+            <input type="radio" name="vaccine_status" id="vaccine_no" />
+            <label for="vaccine_status">არა</label>
+          </div>
+          <h2 class="level-question">აირჩიე რა ეტაპზე ხარ*</h2>
+          <div class="input-box level-box">
+            <input type="radio" name="test_status" id="test_first" />
+            <label for="test_yes"
+              >პირველი დოზა და დარეგისტრირებული ვარ მეორეზე</label
+            >
+          </div>
+          <div class="input-box level-box">
+            <input type="radio" name="test_status" id="test_full" />
+            <label for="test_no">სრულად აცრილი ვარ</label>
+          </div>
+          <div class="input-box level-box">
+            <input type="radio" name="test_status" id="test_wait" />
+            <label for="test_no"
+              >პირველი დოზა და არ დავრეგისტრირებულვარ მეორეზე</label
+            >
+          </div>
+          <h2 class="wait-question">რას ელოდები?*</h2>
+          <div class="input-box wait-box">
+            <input type="radio" name="status" id="register" />
+            <label for="test_yes"
+              >დარეგისტრირებული ვარ და ველოდები რიცხვს</label
+            >
+          </div>
+          <div class="input-box wait-box">
+            <input type="radio" name="status" id="no" />
+            <label for="test_no">არ ვგეგმავ</label>
+          </div>
+          <div class="input-box wait-box">
+            <input type="radio" name="status" id="wait" />
+            <label for="test_no">გადატანილი მაქვს და ვგეგმავ აცრას</label>
+          </div>
+        </form>
+        <img src="../../assets/doctor.png" alt="thermometer" class="info-img" />
+      </section>
+      <div class="buttons">
+        <button class="next-btn" onclick="onPreviousPage()">
+          <svg
+            width="18"
+            height="23"
+            viewBox="0 0 18 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17 1L3 11.3158L17 21.6316"
+              stroke="#232323"
+              stroke-width="2.4"
+            />
+          </svg>
+        </button>
+        <button class="next-btn" onclick="onNextPage()">
+          <svg
+            width="18"
+            height="23"
+            viewBox="0 0 18 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L15 11.3158L1 21.6316"
+              stroke="#232323"
+              stroke-width="2.4"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+    <script src="./vaccine.js"></script>
+  </body>
+</html>
