@@ -16,6 +16,7 @@
   --dark: #000000;
   --warning: #626262;
   --error: #f15524;
+  --green: rgba(32, 130, 152, 1);
 }
 
 body {
